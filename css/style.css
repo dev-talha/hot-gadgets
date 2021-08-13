@@ -1,0 +1,85 @@
+html {
+   scroll-behavior: smooth;
+}
+a {
+   text-decoration: none;
+}
+section {
+   margin-bottom: 100px;
+}
+.main-slider .carousel-indicators .active {
+   background: linear-gradient(
+      90deg,
+      rgba(255, 161, 50, 1) 0%,
+      rgba(255, 205, 26, 1) 100%
+   ) !important;
+   width: 40px !important;
+}
+.main-slider .carousel-indicators [data-bs-target] {
+   width: 18px;
+   background: gray;
+   height: 1px;
+   border-top: 0px;
+   border-radius: 10px;
+   transition: all 0.5s ease;
+}
+.main-slider {
+   background-image: url(/img/bg-2.png);
+   background-repeat: no-repeat;
+   background-position: left bottom;
+}
+.main-slider .carousel {
+   background-image: url(/img/bg-1.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 660px;
+}
+
+.categories .title {
+   padding-bottom: 10px;
+   position: relative;
+   text-align: center;
+}
+.categories .title::after {
+   content: '';
+   position: absolute;
+   width: 100px;
+   height: 5px;
+   bottom: 0;
+   left: 0;
+   background: linear-gradient(
+      90deg,
+      rgba(255, 161, 50, 1) 0%,
+      rgba(255, 205, 26, 1) 100%
+   );
+   right: 0;
+   margin: 0 auto;
+   border-radius: 15px;
+}
+.single-category {
+   text-align: center;
+   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+   border-radius: 7px;
+   padding: 50px 15px;
+}
+.cat-bag {
+   border-top-right-radius: 25px;
+   border-bottom-left-radius: 25px;
+}
+.cat-beauty,
+.cat-shoes {
+   border-top-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+}
+
+.form-box {
+   max-width: 500px;
+   margin: auto;
+   padding: 50px;
+   background: #ffffff;
+}
+
+input,
+textarea {
+   width: 100%;
+}
